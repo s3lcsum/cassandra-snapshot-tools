@@ -205,7 +205,7 @@
     fi
 
     # Write temp command file for Cassandra CLI
-    printf "desc keyspace $KEYSPACE;\n" > $CLITMPFILE
+    printf "DESC KEYSPACE \"$KEYSPACE\";\n" > $CLITMPFILE
 
     # Get local Cassandra listen address.  Should be loaded via the selected
     # cassandra.yaml file above.
